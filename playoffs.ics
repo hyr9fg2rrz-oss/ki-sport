@@ -1,0 +1,420 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//KI Sport//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KI - Sport · Playoffs
+NAME:KI - Sport · Playoffs
+X-WR-TIMEZONE:Europe/Vienna
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+X-LIC-LOCATION:Europe/Vienna
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:espn-401874295@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20261219T020000
+DTEND;TZID=Europe/Vienna:20261219T053000
+SUMMARY:🏈 🏆 🌙 College Football Playoff First Round Game
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff First Round Gam
+ e\nWoche 1\nIm Kalender wegen: College Football Playoff\n🌙 Nachtspiel (
+ Wiener Zeit)\n\n📺 TV\n🇦🇹 AT: –\n🇩🇪 DE: –\n🇬🇧 UK: 
+ –\n🇺🇸 USA: ESPN\n\nStatus: Scheduled\nTV außerhalb USA nach Recht
+ elage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 🌙 College Football Playoff First Round Game
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874296@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20261219T180000
+DTEND;TZID=Europe/Vienna:20261219T213000
+SUMMARY:🏈 🏆 College Football Playoff First Round Game
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff First Round Gam
+ e\nWoche 1\nIm Kalender wegen: College Football Playoff\n\n📺 TV\n🇦
+ 🇹 AT: –\n🇩🇪 DE: –\n🇬🇧 UK: –\n🇺🇸 USA: ABC\, ESPN
+ \n\nStatus: Scheduled\nTV außerhalb USA nach Rechtelage 2026/27\, ohne Ge
+ währ.
+CATEGORIES:College Football Playoff
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 College Football Playoff First Round Game
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874297@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20261219T213000
+DTEND;TZID=Europe/Vienna:20261220T010000
+SUMMARY:🏈 🏆 College Football Playoff First Round Game
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff First Round Gam
+ e\nWoche 1\nIm Kalender wegen: College Football Playoff\n\n📺 TV\n🇦
+ 🇹 AT: –\n🇩🇪 DE: –\n🇬🇧 UK: –\n🇺🇸 USA: TNT\, truT
+ V\n\nStatus: Scheduled\nTV außerhalb USA nach Rechtelage 2026/27\, ohne G
+ ewähr.
+CATEGORIES:College Football Playoff
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 College Football Playoff First Round Game
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874298@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20261220T013000
+DTEND;TZID=Europe/Vienna:20261220T050000
+SUMMARY:🏈 🏆 🌙 College Football Playoff First Round Game
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff First Round Gam
+ e\nWoche 1\nIm Kalender wegen: College Football Playoff\n🌙 Nachtspiel (
+ Wiener Zeit)\n\n📺 TV\n🇦🇹 AT: –\n🇩🇪 DE: –\n🇬🇧 UK: 
+ –\n🇺🇸 USA: TNT\, truTV\n\nStatus: Scheduled\nTV außerhalb USA nac
+ h Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 🌙 College Football Playoff First Round Game
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874299@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20261231T013000
+DTEND;TZID=Europe/Vienna:20261231T050000
+SUMMARY:🏈 🏆 🌙 College Football Playoff Quarterfinal at the Vrbo Fi
+ esta Bowl
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff Quarterfinal at
+  the Vrbo Fiesta Bowl\nWoche 1\nIm Kalender wegen: College Football Playof
+ f\n🌙 Nachtspiel (Wiener Zeit)\n\n📺 TV\n🇦🇹 AT: –\n🇩🇪 DE
+ : –\n🇬🇧 UK: –\n🇺🇸 USA: TNT\, truTV\n\nStatus: Scheduled\nT
+ V außerhalb USA nach Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+LOCATION:State Farm Stadium\, Glendale
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 🌙 College Football Playoff Quarterfinal at the Vrb
+ o Fiesta Bowl
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874320@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 College Football Playoff Quarterfinal at the Goodyear Cot
+ ton Bowl Classic
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff Quarterfinal at
+  the Goodyear Cotton Bowl Classic\nWoche 1\nIm Kalender wegen: College Foo
+ tball Playoff\n\n📺 TV\n🇦🇹 AT: –\n🇩🇪 DE: –\n🇬🇧 UK:
+  –\n🇺🇸 USA: –\n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV a
+ ußerhalb USA nach Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+LOCATION:AT&T Stadium\, Arlington
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874321@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 College Football Playoff Quarterfinal at the Rose Bowl Pr
+ esented by Prudential
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff Quarterfinal at
+  the Rose Bowl Presented by Prudential\nWoche 1\nIm Kalender wegen: Colleg
+ e Football Playoff\n\n📺 TV\n🇦🇹 AT: –\n🇩🇪 DE: –\n🇬
+ 🇧 UK: –\n🇺🇸 USA: –\n\nStatus: Scheduled\nAnstoßzeit noch off
+ en\nTV außerhalb USA nach Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+LOCATION:Rose Bowl\, Pasadena
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874342@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 College Football Playoff Quarterfinal at the Chick-fil-A 
+ Peach Bowl
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff Quarterfinal at
+  the Chick-fil-A Peach Bowl\nWoche 1\nIm Kalender wegen: College Football 
+ Playoff\n\n📺 TV\n🇦🇹 AT: –\n🇩🇪 DE: –\n🇬🇧 UK: –\n
+ 🇺🇸 USA: –\n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerh
+ alb USA nach Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+LOCATION:Mercedes-Benz Stadium\, Atlanta
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874300@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20270115T013000
+DTEND;TZID=Europe/Vienna:20270115T050000
+SUMMARY:🏈 🏆 🌙 College Football Playoff Semifinal at the Capital On
+ e Orange Bowl
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff Semifinal at th
+ e Capital One Orange Bowl\nWoche 1\nIm Kalender wegen: College Football Pl
+ ayoff\n🌙 Nachtspiel (Wiener Zeit)\n\n📺 TV\n🇦🇹 AT: –\n🇩
+ 🇪 DE: –\n🇬🇧 UK: –\n🇺🇸 USA: TNT\, truTV\n\nStatus: Sched
+ uled\nTV außerhalb USA nach Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+LOCATION:Hard Rock Stadium\, Miami Gardens
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 🌙 College Football Playoff Semifinal at the Capita
+ l One Orange Bowl
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874301@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20270116T013000
+DTEND;TZID=Europe/Vienna:20270116T050000
+SUMMARY:🏈 🏆 🌙 College Football Playoff Semifinal at the Allstate S
+ ugar Bowl
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff Semifinal at th
+ e Allstate Sugar Bowl\nWoche 1\nIm Kalender wegen: College Football Playof
+ f\n🌙 Nachtspiel (Wiener Zeit)\n\n📺 TV\n🇦🇹 AT: –\n🇩🇪 DE
+ : –\n🇬🇧 UK: –\n🇺🇸 USA: ABC\, ESPN\n\nStatus: Scheduled\nTV
+  außerhalb USA nach Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+LOCATION:Caesars Superdome\, New Orleans
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 🌙 College Football Playoff Semifinal at the Allsta
+ te Sugar Bowl
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872910@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Wild Card Playoffs
+DESCRIPTION:NFL Playoffs\nWild Card Playoffs\nWoche 1\nIm Kalender wegen: N
+ FL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: RT
+ L / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –\
+ n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Recht
+ elage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872911@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Wild Card Playoffs
+DESCRIPTION:NFL Playoffs\nWild Card Playoffs\nWoche 1\nIm Kalender wegen: N
+ FL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: RT
+ L / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –\
+ n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Recht
+ elage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872912@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Wild Card Playoffs
+DESCRIPTION:NFL Playoffs\nWild Card Playoffs\nWoche 1\nIm Kalender wegen: N
+ FL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: RT
+ L / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –\
+ n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Recht
+ elage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872913@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Wild Card Playoffs
+DESCRIPTION:NFL Playoffs\nWild Card Playoffs\nWoche 1\nIm Kalender wegen: N
+ FL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: RT
+ L / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –\
+ n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Recht
+ elage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872914@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Wild Card Playoffs
+DESCRIPTION:NFL Playoffs\nWild Card Playoffs\nWoche 1\nIm Kalender wegen: N
+ FL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: RT
+ L / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –\
+ n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Recht
+ elage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872915@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Wild Card Playoffs
+DESCRIPTION:NFL Playoffs\nWild Card Playoffs\nWoche 1\nIm Kalender wegen: N
+ FL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: RT
+ L / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –\
+ n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Recht
+ elage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872916@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Divisional Playoffs
+DESCRIPTION:NFL Playoffs\nDivisional Playoffs\nWoche 2\nIm Kalender wegen: 
+ NFL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: R
+ TL / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –
+ \n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Rech
+ telage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872917@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Divisional Playoffs
+DESCRIPTION:NFL Playoffs\nDivisional Playoffs\nWoche 2\nIm Kalender wegen: 
+ NFL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: R
+ TL / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –
+ \n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Rech
+ telage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872918@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Divisional Playoffs
+DESCRIPTION:NFL Playoffs\nDivisional Playoffs\nWoche 2\nIm Kalender wegen: 
+ NFL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: R
+ TL / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –
+ \n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Rech
+ telage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872919@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 Divisional Playoffs
+DESCRIPTION:NFL Playoffs\nDivisional Playoffs\nWoche 2\nIm Kalender wegen: 
+ NFL Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: R
+ TL / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –
+ \n\nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Rech
+ telage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401874322@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20270126T013000
+DTEND;TZID=Europe/Vienna:20270126T050000
+SUMMARY:🏈 🏆 🌙 College Football Playoff National Championship Prese
+ nted by AT&T
+DESCRIPTION:NCAA Football Playoff\nCollege Football Playoff National Champi
+ onship Presented by AT&T\nWoche 1\nIm Kalender wegen: College Football Pla
+ yoff\n🌙 Nachtspiel (Wiener Zeit)\n\n📺 TV\n🇦🇹 AT: –\n🇩🇪
+  DE: –\n🇬🇧 UK: –\n🇺🇸 USA: ABC\n\nStatus: Scheduled\nTV au
+ ßerhalb USA nach Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:College Football Playoff
+LOCATION:Allegiant Stadium\, Las Vegas
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 🌙 College Football Playoff National Championship P
+ resented by AT&T
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872920@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 NFC Championship
+DESCRIPTION:NFL Playoffs\nNFC Championship\nWoche 3\nIm Kalender wegen: NFL
+  Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: RTL 
+ / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –\n\
+ nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Rechtel
+ age 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401872921@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+TRANSP:TRANSPARENT
+SUMMARY:🏈 🏆 AFC Championship
+DESCRIPTION:NFL Playoffs\nAFC Championship\nWoche 3\nIm Kalender wegen: NFL
+  Playoffs\n\n📺 TV\n🇦🇹 AT: Sky / DAZN Game Pass\n🇩🇪 DE: RTL 
+ / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Game Pass\n🇺🇸 USA: –\n\
+ nStatus: Scheduled\nAnstoßzeit noch offen\nTV außerhalb USA nach Rechtel
+ age 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-401873270@ki-sport
+DTSTAMP:20261123T192621Z
+DTSTART;TZID=Europe/Vienna:20270215T003000
+DTEND;TZID=Europe/Vienna:20270215T040000
+SUMMARY:🏈 🏆 🌙 Super Bowl LXI
+DESCRIPTION:NFL Playoffs\nSuper Bowl LXI\nWoche 4\nIm Kalender wegen: NFL P
+ layoffs\n🌙 Nachtspiel (Wiener Zeit)\n\n📺 TV\n🇦🇹 AT: Sky / DAZN
+  Game Pass\n🇩🇪 DE: RTL / RTL+\n🇬🇧 UK: Sky Sports NFL / DAZN Ga
+ me Pass\n🇺🇸 USA: ABC\, Disney+\, ESPN\n\nStatus: Scheduled\nTV auße
+ rhalb USA nach Rechtelage 2026/27\, ohne Gewähr.
+CATEGORIES:NFL Playoffs
+LOCATION:SoFi Stadium\, Inglewood
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏈 🏆 🌙 Super Bowl LXI
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

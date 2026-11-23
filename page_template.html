@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KI - Sport</title>
+<meta name="theme-color" content="#0f1720">
+<style>
+:root{
+  --bg:#f5f6f8; --card:#ffffff; --text:#14181f; --muted:#5d6675; --line:#e3e6eb;
+  --accent:#1f6feb; --accent-soft:#e6efff; --star:#b7791f; --trophy:#8a5cf6; --night:#4a5568;
+  --chip:#eef0f3;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0f1720; --card:#17212c; --text:#e8edf3; --muted:#98a3b3; --line:#253242;
+    --accent:#5b9bff; --accent-soft:#1b2c45; --star:#f0b85a; --trophy:#b49cff; --night:#a3b0c2;
+    --chip:#1f2b38;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+header h1{margin:0;font-size:26px;letter-spacing:-.01em}
+header p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0 10px;margin-top:8px;
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:1px solid var(--line)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--text);border-radius:999px;
+  padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+.bar label{margin-left:auto;font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center}
+select{font:inherit;font-size:14px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);
+  background:var(--card);color:var(--text)}
+.day{margin-top:22px}
+.day h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 8px}
+.day h2 b{color:var(--text)}
+.list{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.g{display:grid;grid-template-columns:52px 1fr;gap:2px 10px;padding:11px 14px;border-top:1px solid var(--line)}
+.g:first-child{border-top:0}
+.t{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px}
+.t small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+.m{font-weight:600;overflow-wrap:anywhere}
+.m .res{font-weight:500;color:var(--muted);margin-left:6px}
+.meta{grid-column:2;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:4px 10px}
+.tv{grid-column:2;font-size:13px;margin-top:3px}
+.tv b{color:var(--accent);font-weight:600}
+.tv details{display:inline}
+.tv summary{display:inline;cursor:pointer;color:var(--muted);margin-left:6px;list-style:none}
+.tv summary::-webkit-details-marker{display:none}
+.tv .all{display:block;color:var(--muted);margin-top:2px}
+.badge{font-size:12px;padding:1px 7px;border-radius:999px;background:var(--chip);color:var(--muted)}
+.badge.star{color:var(--star)} .badge.trophy{color:var(--trophy)} .badge.night{color:var(--night)}
+.badge.mine{background:var(--accent-soft);color:var(--accent)}
+.empty{color:var(--muted);padding:24px 0;text-align:center}
+.subs{margin-top:36px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.subs h2{margin:0 0 4px;font-size:17px}
+.subs p{margin:0 0 10px;color:var(--muted);font-size:13px}
+.subs ul{list-style:none;margin:0;padding:0}
+.subs li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line)}
+.subs li:first-child{border-top:0}
+.subs a{color:var(--accent);text-decoration:none;font-weight:600}
+.subs button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--chip);color:var(--text);
+  border-radius:8px;padding:4px 10px;cursor:pointer;white-space:nowrap}
+footer{margin-top:20px;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>KI - Sport</h1>
+    <p>Die nächsten 14 Tage · Wiener Zeit · aktualisiert <!--UPDATED--></p>
+  </header>
+
+  <div class="bar">
+    <div class="chips" role="group" aria-label="Filter">
+      <button class="chip" data-f="all">Alle</button>
+      <button class="chip" data-f="teams">Meine Teams</button>
+      <button class="chip" data-f="top">Topspiele</button>
+      <button class="chip" data-f="playoff">Playoffs</button>
+    </div>
+    <label>TV in
+      <select id="land">
+        <option value="AT">🇦🇹 Österreich</option>
+        <option value="DE">🇩🇪 Deutschland</option>
+        <option value="UK">🇬🇧 England</option>
+        <option value="USA">🇺🇸 USA</option>
+      </select>
+    </label>
+  </div>
+
+  <main id="out"></main>
+
+  <section class="subs">
+    <h2>Kalender abonnieren</h2>
+    <p>Antippen öffnet das Abo am iPhone/Mac. Für Google Kalender: Link kopieren → „Weitere Kalender“ → „Per URL“.
+      Entweder „KI - Sport“ (alles) oder die drei Einzelkalender wählen, sonst stehen Spiele doppelt drin.</p>
+    <ul><!--SUBS--></ul>
+  </section>
+
+  <footer>Daten: ESPN. TV-Sender außerhalb der USA nach Rechtelage 2026/27, ohne Gewähr.</footer>
+</div>
+
+<script>
+const DATA = /*DATA*/[];
+const FLAGS = {AT:"🇦🇹",DE:"🇩🇪",UK:"🇬🇧",USA:"🇺🇸"};
+const store = {
+  get(k,d){try{return localStorage.getItem(k)||d}catch(e){return d}},
+  set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+};
+let filter = store.get("f","all"), land = store.get("land","AT");
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function dayTitle(iso){
+  const d = new Date(iso+"T12:00:00"), t = new Date(); t.setHours(12,0,0,0);
+  const diff = Math.round((d - t)/864e5);
+  const w = d.toLocaleDateString("de-AT",{weekday:"long"});
+  const date = d.toLocaleDateString("de-AT",{day:"numeric",month:"long"});
+  const rel = diff===0 ? "Heute" : diff===1 ? "Morgen" : w;
+  return `<b>${rel}</b>${diff<=1 ? " · "+w : ""} · ${date}`;
+}
+
+function render(){
+  document.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.f===filter));
+  $("#land").value = land;
+  const rows = DATA.filter(g => filter==="all" || g.group===filter);
+  if(!rows.length){ $("#out").innerHTML = '<p class="empty">Keine Spiele in den nächsten 14 Tagen.</p>'; return; }
+  const days = {};
+  rows.forEach(g => (days[g.day] ||= []).push(g));
+  $("#out").innerHTML = Object.entries(days).map(([day, gs]) => `
+    <section class="day"><h2>${dayTitle(day)}</h2><div class="list">${gs.map(g => {
+      const badges = [];
+      if(g.group==="teams") badges.push(`<span class="badge mine">${esc(g.why.filter(w=>!/Top|Prime|Playoff|Derby|Klassiker|Clásico|Derbi|The Game/.test(w)).join(", ")||"Mein Team")}</span>`);
+      if(g.derby) badges.push(`<span class="badge star">⭐ ${esc(g.derby)}</span>`);
+      else if(g.star) badges.push('<span class="badge star">⭐ Topspiel</span>');
+      if(g.playoff) badges.push('<span class="badge trophy">🏆 Playoffs</span>');
+      if(g.night) badges.push('<span class="badge night">🌙 Nacht</span>');
+      const main = g.tv[land];
+      const others = Object.keys(FLAGS).filter(k => k!==land).map(k => `${FLAGS[k]} ${esc(g.tv[k]||"–")}`).join(" · ");
+      return `<div class="g">
+        <div class="t">${g.time || "offen"}<small>${g.sport==="soccer"?"⚽":"🏈"}</small></div>
+        <div class="m">${esc(g.match)}${g.result?`<span class="res">${esc(g.result)}</span>`:""}</div>
+        <div class="meta"><span>${esc(g.label)}</span>${badges.join("")}</div>
+        <div class="tv">${FLAGS[land]} ${main?`<b>${esc(main)}</b>`:"kein Sender bekannt"}
+          <details><summary>andere Länder ▾</summary><span class="all">${others}</span></details></div>
+      </div>`;}).join("")}</div></section>`).join("");
+}
+
+document.querySelectorAll(".chip").forEach(b => b.onclick = () => { filter=b.dataset.f; store.set("f",filter); render(); });
+$("#land").onchange = e => { land=e.target.value; store.set("land",land); render(); };
+document.querySelectorAll("[data-copy]").forEach(b => b.onclick = async () => {
+  try{ await navigator.clipboard.writeText(b.dataset.copy); b.textContent="Kopiert ✓"; }
+  catch(e){ prompt("Link kopieren:", b.dataset.copy); }
+  setTimeout(()=>b.textContent="Link kopieren",2000);
+});
+render();
+</script>
+</body>
+</html>
